@@ -58,7 +58,7 @@ lpoptions -p <printer_name> -l
 ```
 Among all the information given by the previous command, there is a list of possible `PageSize/Media Size` which can be used. The option used was the `Custom.WIDTHxWEIGHT` because it allows a customized label size. Regarding the orientation of the printing, it can also be configured in the command to execute. The next image was extracted from the [CUPS.org website](https://www.cups.org/doc/options.html).
 
-![cups_page_orientation](.doc/images/cups_page_orientation.png)
+![cups_page_orientation](../images/cups_page_orientation.png)
 
 To print a label with a `50mm x 25mm` size, a pdf file with the respective label content should be created. It is important to refer that the pdf should contain a file with same size as previously defined, in this case `50mm x 25mm`. To print a label, please run the following command replacing `<printer_name>` by the name of the printer in yor system (e.g. `_PM_241_BT` or `PM-241-BT`), changing the orientation value for the aimed configuration and updating the correct path for the pdf file to print:
 ```bash
@@ -90,7 +90,8 @@ python linux_mac_print.py
 ```
 
 4. The script generates a `label_with_qr.pdf` file and sends it to the printer. Verify that the label prints correctly.
-![label_printed](.doc/images/label_printed.png)
+
+![label_printed](../images/label_printed.png)
 
 ### Adding Images and QR Codes
 The script supports adding images and QR codes to the label. Customize the script with your own content:

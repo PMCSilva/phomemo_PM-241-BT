@@ -57,23 +57,24 @@ The label size needs to be set properly before printing. To check the available 
 1. Open the printer’s properties:
    - Go to **Control Panel > Devices and Printers**.
    - Click at **Printers & Scanners** like next image shows.
-   ![printer_scanners](.doc/images/printer_scanners.png)
+   ![printer_scanners](../images/printer_scanners.png)
    - Chose **PM-241-BT** printer.
-   ![pm-241-bt_printer](.doc/images/pm-241-bt_printer.png)
+   ![pm-241-bt_printer](../images/pm-241-bt_printer.png)
    - Open printing preferences.
-   ![print_preferences](.doc/images/print_preferences.png)
+   ![print_preferences](../images/print_preferences.png)
 
 2. Check which units you want to use going to **Option** tab. In this example the unit is `mm`:
-![label_units](.doc/images/label_units.png)
+![label_units](../images/label_units.png)
 
 3. Check for available label sizes:
    - Go to **Page Setup** tab.
    - Click **New**, specify the desired dimensions (e.g., `50mm x 25mm`), and save it with a name of your choice.
-   ![new_label](.doc/images/new_label.png)
+   ![new_label](../images/new_label.png)
    - Ensure the custom size appears in the printer preferences.
 
 4. In **Page Setup** tab is also possible to selected the desired label rotation:
-![label_rotation](.doc/images/label_rotation.png)
+
+![label_rotation](../images/label_rotation.png)
 
 5. Once all the configuration is performed, please click **Apply** and **OK**.
 
@@ -107,7 +108,8 @@ Steps to run the script:
 python windows_print.py  
 ```
 4. The script generates a `label_with_qr.pdf` file and sends it to the printer. Verify that the label prints correctly.
-![label_printed](.doc/images/label_printed.png)
+
+![label_printed](../images/label_printed.png)
 
 ---
 
