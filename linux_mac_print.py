@@ -15,9 +15,9 @@ def convert_image_to_bw(image_path, output_path):
         bw_image = img.convert("L").point(lambda x: 0 if x < 128 else 255, "1")
         bw_image.save(output_path)
 
-def generate_label_pdf(filename, qr_content, label_text, label_width=50*mm, label_height=25*mm, image_path=None):
+def generate_label_pdf(filename, qr_content, label_text, label_width, label_height, image_path=None):
     # Create a new PDF canvas
-    c = canvas.Canvas(filename, pagesize=(label_width, label_height))
+    c = canvas.Canvas(filename, pagesize=(label_width*mm, label_height*mm))
 
     # Generate QR code image
     qr = qrcode.make(qr_content)
@@ -51,21 +51,34 @@ def generate_label_pdf(filename, qr_content, label_text, label_width=50*mm, labe
     if os.path.exists(qr_filename):
         os.remove(qr_filename)
 
-def print_pdf(pdf_file, printer_name, timeout=10):
-    # Use the lp command to send the PDF to the specified printer
-
+def print_pdf(pdf_file, printer_name, label_width, label_height, timeout=10):
+    # Construct the lp command
+    lp_command = [
+        "lp",
+        "-d", printer_name,
+        "-o", f"media=Custom.{label_width}x{label_height}mm",
+        "-o", "orientation-requested=3",  # Orientation: Portrait (3) or Landscape (4)
+        pdf_file
+    ]
+    
     try:
-        subprocess.run(["lp", "-d", printer_name, "-o", "media=Custom.50x25mm", pdf_file], check=True)
-        print(f"Printed {pdf_file} to printer {printer_name}.")
+        print(f"Executing: {lp_command}")
+        # Run the lp command
+        subprocess.run(lp_command, check=True, timeout=timeout)
+        print(f"Printed {pdf_file} to printer {printer_name} with label size {label_width}x{label_height}mm.")
     except subprocess.CalledProcessError as e:
         print(f"Failed to print {pdf_file}: {e}")
+    except subprocess.TimeoutExpired:
+        print(f"Print job timed out after {timeout} seconds.")
 
 if __name__ == "__main__":
     # Example usage
+    label_width = 50
+    label_height = 25
     pdf_filename = "label_with_qr.pdf"
-    printer_name = "PM-241-BT"  # Replace with your printer name
+    printer_name = "_PM_241_BT"  # Replace with your printer name
     additional_image = ".doc/images/git_logo.png"
-    generate_label_pdf(pdf_filename, "https://www.github.com", "Hello, World!", image_path=additional_image)
+    generate_label_pdf(pdf_filename, "https://www.github.com", "Hello, World!", label_width, label_height, image_path=additional_image)
 
     # Print the generated PDF
-    print_pdf(pdf_filename, printer_name)
+    print_pdf(pdf_filename, printer_name, label_width, label_height)
