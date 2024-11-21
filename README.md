@@ -44,5 +44,5 @@ Feel free to contribute to this project by submitting issues or pull requests.
 
 Thank contributors, organizations, or resources that supported the project:
 
-- Acknowledge the [ReportLab](https://www.reportlab.com/) and [qrcode](https://github.com/lincolnloop/python-qrcode) libraries.
+- Acknowledge the [ReportLab](https://www.reportlab.com/), [qrcode](https://github.com/lincolnloop/python-qrcode) and [pillow](https://pillow.readthedocs.io/en/stable/) libraries.
 - Special acknowledge to [Xelerate.tech](https://www.xelerate.tech/) team by providing all the necessary material and support to accomplish this project.
