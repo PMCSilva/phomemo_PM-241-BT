@@ -27,8 +27,8 @@ A Python-based script for printing labels with QR codes and images on three majo
 
 # Environment Setup
 
-- To check for the `Linux/MacOS` setup preparation, please take a closer look on the following [README](README_LINUX_MAC.md) file included in this repository.
-- To check for the `Windows` setup preparation, please take a closer look on the following [README](README_WINDOWS.md) file included in this repository.
+- To check for the `Linux/MacOS` setup preparation, please take a closer look on the following [README](.doc/readmes/README_LINUX_MAC.md) file included in this repository.
+- To check for the `Windows` setup preparation, please take a closer look on the following [README](.doc/readmes/README_WINDOWS.md) file included in this repository.
 
 These setup guides cover driver installation, printer configuration, label size customization, and Python script execution to print your labels successfully.
 
