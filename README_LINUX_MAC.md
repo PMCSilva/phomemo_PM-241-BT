@@ -126,4 +126,4 @@ This convertion is done at `convert_image_to_bw()` function.
    - Ensure the printer is added as a trusted device in your system.
 
 
-By following this guide, you should be able to generate and print custom labels with QR codes and images on Windows using the `PM-241-BT` printer.
+By following this guide, you should be able to generate and print custom labels with QR codes and images on **Linux/MacOS** using the `PM-241-BT` printer.
