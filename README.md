@@ -30,10 +30,19 @@ A Python-based script for printing labels with QR codes and images on three majo
 - To check for the `Linux/MacOS` setup preparation, please take a closer look on the following [README](.doc/readmes/README_LINUX_MAC.md) file included in this repository.
 - To check for the `Windows` setup preparation, please take a closer look on the following [README](.doc/readmes/README_WINDOWS.md) file included in this repository.
 
-These setup guides cover driver installation, printer configuration, label size customization, and Python script execution to print your labels successfully.
+These setup guides cover driver installation, printer configuration, label size customization, and Python script execution to print your labels successfully. The following image shows the output label printed by executing one of both `linux_mac_print.py` or `windows_print.py` with labels with `50mm x 25mm` size.
+
+![final_label](.doc/images/final_label.png)
 
 ---
 
 ## Contribution and Support
 
 Feel free to contribute to this project by submitting issues or pull requests.
+
+## Acknowledgements
+
+Thank contributors, organizations, or resources that supported the project:
+
+- Acknowledge the [ReportLab](https://www.reportlab.com/) and [qrcode](https://github.com/lincolnloop/python-qrcode) libraries.
+- Special acknowledge to [Xelerate.tech](https://www.xelerate.tech/) team by providing all the necessary material and support to accomplish this project.
