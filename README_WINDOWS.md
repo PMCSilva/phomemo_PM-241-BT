@@ -101,7 +101,7 @@ Before running the script, ensure the following:
 
 Steps to run the script:
 1. Clone this repository and navigate to the directory.
-2. Update the `label_width`, `label_height`, and `printer_name` variables in the python script main function if needed.
+2. Update the `label_width`, `label_height`, and `printer_name` variables in the `windows_print.py` main function if needed.
 3. Execute the script to generate and print a label:
 ```bash
 python windows_print.py  

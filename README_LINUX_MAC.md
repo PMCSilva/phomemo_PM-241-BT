@@ -83,7 +83,7 @@ Before going for the details regarding python script execution, it is important 
 git clone https://github.com/PMCSilva/phomemo_PM-241-BT.git  
 cd phomemo_PM-241-BT  
 ```
-2. Update main function variables `label_width`, `label_height` and `printer_name` (e.g. `_PM_241_BT` or `PM-241-BT`) if needed;
+2. Update `linux_mac_print.py` main function variables `label_width`, `label_height` and `printer_name` (e.g. `_PM_241_BT` or `PM-241-BT`) if needed;
 3. Run the script to generate and print a label:
 ```bash
 python linux_mac_print.py  
