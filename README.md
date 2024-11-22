@@ -1,6 +1,13 @@
 # Phomemo label printer project
 
-A Python-based script for printing labels with QR codes and images on three major operating systems: **Linux**, **macOS**, and **Windows**. This tool allows users to specify custom label sizes, generate QR codes, include images, and print directly to a label printer. In this particular project, the used label printer was a PM-241-BT from [Phomemo](https://phomemo.com) like following image shows. This printer was purchased at [amazon](https://www.amazon.es/dp/B0BSBTWQ17/ref=sr_1_1_sspa?crid=16WX4MIKH32L3&dib=eyJ2IjoiMSJ9.M09FS4lmpkLF2MN9NbHTgkgqQoCzPodHLyieukvrzHcR-ybIID_CjKIP8OGh5nyF7n1dvflcRViH7w0famM_w-eefLjYxCHDEZcYvkmSqDsgzswr2Ny5Y4HP0RkyBHo_1soLQdr4DWgSsWNSynBB6A._9Rxx4f8yPZiau79RMGMFmzYN9PCwMMkP1ATTlkFMVU&dib_tag=se&keywords=pm-241-bt&nsdOptOutParam=true&qid=1732195655&sprefix=pm-241-bt%2Caps%2C123&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1).
+A Python-based script for printing labels with QR codes and images on three major operating systems: **Linux**, **macOS**, and **Windows**. This tool allows users to specify custom label sizes, generate QR codes, include images, and print directly to a label printer. In this particular project, the used label printer was a PM-241-BT from [Phomemo](https://phomemo.com) like following image shows. This printer was purchased at [Amazon](http://www.amazon.es). If you want to buy a printer to try this project, you can use on of the following links:
+
+  - [Link1](http://www.amazon.es/dp/B0BSBTWQ17/ref=nosim?tag=pmcunhasilva-21)
+  - [Link2](http://www.amazon.es/dp/B0BMKTV8ZL/ref=nosim?tag=pmcunhasilva-21)
+  - [Link3](http://www.amazon.es/dp/B0BTYFJR36/ref=nosim?tag=pmcunhasilva-21)
+  - [Link4](http://www.amazon.es/dp/B0BTYD7H28/ref=nosim?tag=pmcunhasilva-21)
+  - [Link5](http://www.amazon.es/dp/B0CCRSJP5S/ref=nosim?tag=pmcunhasilva-21)
+  - [Link6](http://www.amazon.es/dp/B0BS8Q3FZQ/ref=nosim?tag=pmcunhasilva-21)
 
 ![PM-241-BT](.doc/images/PM-241-BT.png)
 
