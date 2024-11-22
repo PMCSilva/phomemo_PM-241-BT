@@ -1,6 +1,6 @@
 # Phomemo label printer project
 
-A Python-based script for printing labels with QR codes and images on three major operating systems: **Linux**, **macOS**, and **Windows**. This tool allows users to specify custom label sizes, generate QR codes, include images, and print directly to a label printer. In this particular project, the used label printer was a PM-241-BT from [Phomemo](https://phomemo.com) like following image shows. This printer was purchased at [Amazon](http://www.amazon.es). If you want to buy a printer to try this project, you can use on of the following links:
+A Python-based script for printing labels with QR codes and images on three major operating systems: **Linux**, **macOS**, and **Windows**. This tool allows users to specify custom label sizes, generate QR codes, include images, and print directly to a label printer. In this particular project, the used label printer was a PM-241-BT from [Phomemo](https://phomemo.com) like following image shows. This printer was purchased at [Amazon](http://www.amazon.es). If you want to buy a printer to try this project, you can use one of the following links:
 
   - [Link1](http://www.amazon.es/dp/B0BSBTWQ17/ref=nosim?tag=pmcunhasilva-21)
   - [Link2](http://www.amazon.es/dp/B0BMKTV8ZL/ref=nosim?tag=pmcunhasilva-21)
